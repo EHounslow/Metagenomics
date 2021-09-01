@@ -1,12 +1,21 @@
+from pandas.core.frame import DataFrame
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_selection import RFE
 
 
-def run_logistic_regression(x, y):
+def run_logistic_regression(x: DataFrame, y: DataFrame):
+    """
+    Runs a logistic regression model.
+    Args:
+        x: (DataFrame): Data for x.
+        y: (DataFrame): Data for y.
+    Returns:
+        Printed statement
+    """
     logistic_reg_model = LogisticRegression(max_iter=10000)
     rfe = RFE(logistic_reg_model, n_features_to_select=10)
     rfe = rfe.fit(x, y)
-    # summarize the selection of the attributes
+    # Summarize the selection of the attributes
     print(rfe.support_)
     print(rfe.ranking_)
 

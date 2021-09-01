@@ -13,9 +13,6 @@ def run_random_forest(
         train_y: (DataFrame): Training data for y.
         val_x: (DataFrame):  Validation data for x.
         val_y: (DataFrame): Validation data for y.
-
-    Returns:
-        Printed statement
     """
 
     # Define the model. Set random_state to 1
@@ -28,4 +25,4 @@ def run_random_forest(
     rf_val_predictions = rf_model.predict(val_x)
     rf_val_mae = mean_absolute_error(rf_val_predictions, val_y)
 
-    return print(f"Validation MAE for Random Forest Model: {rf_val_mae}")
+    print(f"Validation MAE for Random Forest Model: {rf_val_mae}")

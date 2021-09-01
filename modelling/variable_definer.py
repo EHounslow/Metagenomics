@@ -1,7 +1,8 @@
+from typing import List, Tuple
 from pandas.core.frame import DataFrame
 
 
-def get_variables(data_subset: DataFrame):
+def get_variables(data_subset: DataFrame) -> Tuple[List, List, List]:
     """
     Seperates the variables into 3 lists containing metadata, species,
     and all other taxonomic variables.

@@ -2,7 +2,7 @@ import pandas as pd
 from pandas.core.frame import DataFrame
 
 
-def extract_abundance_data(abundance) -> DataFrame:
+def extract_abundance_data(abundance: str) -> DataFrame:
     """
     Creates a transposed dataframe from a .txt or .csv file and sets the first row as the header.
     Args:
