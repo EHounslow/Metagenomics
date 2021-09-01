@@ -3,7 +3,9 @@ from sklearn.metrics import mean_absolute_error
 from pandas.core.frame import DataFrame
 
 
-def run_random_forest(train_x: DataFrame, train_y: DataFrame, val_x: DataFrame, val_y: DataFrame) -> None:
+def run_random_forest(
+    train_x: DataFrame, train_y: DataFrame, val_x: DataFrame, val_y: DataFrame
+) -> None:
     """
     Runs a random forest model.
     Args:
@@ -17,7 +19,7 @@ def run_random_forest(train_x: DataFrame, train_y: DataFrame, val_x: DataFrame, 
     """
 
     # Define the model. Set random_state to 1
-    rf_model = RandomForestRegressor(random_state = 1)
+    rf_model = RandomForestRegressor(random_state=1)
 
     # Fit model
     rf_model.fit(train_x, train_y)
