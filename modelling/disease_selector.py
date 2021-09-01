@@ -9,7 +9,7 @@ def get_disease_data(
     Creates a single disease subset dataframe from the full metagenomic dataframe.
     Args:
         disease_to_select: (str): Name of the target dataset
-        abundance_data: (DataFrame): Dataframe of the targeted disease subset
+        disease_target: (DataFrame): Dataframe of the targeted disease subset
 
     Returns:
         Tuple [DataFrame, DataFrame, DataFrame]: 3 dataframes returning subsets
