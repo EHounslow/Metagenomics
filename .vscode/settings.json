@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "C:\\Users\\emily\\OneDrive\\Documents\\Kaggle challenges\\Metagenomics\\Metagenomics\\.venv\\Scripts\\python.exe",
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
+}
